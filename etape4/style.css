@@ -1,0 +1,72 @@
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#table_container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;          
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;  
+
+th {
+    background-color: #007bb8;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Classes de colonnes demandées par l'énoncé */
+.col_number {/* N° et Points */
+    width: 60px;
+    text-align: center;
+}
+
+td.col_text {/* Nom et Prénom : alignés à gauche */
+    text-align: left;
+}
+
+.col_chkbox {/* Select (case à cocher) */
+    width: 70px;
+    text-align: center;
+}
+
+/* Léger surlignage de la ligne survolée */
+.row:hover {
+    background-color: #f3f9fd;
+}
+
+/*  Etape 4 : espace "Résumé" sous le tableau  */
+#container_summary {
+    display: flex;/* p1 | p2 | p3 sur une seule ligne */
+    justify-content: space-between;/* p1 à gauche, p3 à droite */
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0 8px;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+}
+
+#container_summary p {
+    margin: 8px 0;
+    font-size: 13px;
+}
+                   
