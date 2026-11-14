@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-Persons - Etape 3 : Insertion à partir d'un tableau d'objets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="table_container">
+
+        <!-- Les lignes de données ont été supprimées : seul l'en-tête reste.
+             Le tableau sera rempli par JavaScript à partir du tableau "persons" -->
+        <table id="table_persons">
+            <thead>
+                <tr>
+                    <th class="col_number">N°</th>
+                    <th class="col_text">Nom</th>
+                    <th class="col_text">Prénom</th>
+                    <th class="col_number">Points</th>
+                    <th class="col_chkbox">Select</th>
+                </tr>
+            </thead>
+            <tbody id="table_body"></tbody>
+        </table>
+
+        <!-- Bouton Ajouter de l'étape 2 (toujours des données statiques) -->
+        <button onclick="doInsertRowTable(99, 'nom', 'prenom', 10)">Ajouter</button>
+
+        <!-- Nouveau bouton : au clic, affiche le contenu du tableau "persons" dans la console -->
+        <button onclick="consoleTableau()">Console Tableau</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
