@@ -1,0 +1,146 @@
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+
+#table_container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;          
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+
+th {
+    background-color: #007bb8;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Classes de colonnes demandées par l'énoncé */
+.col_number {/* N° et Points */
+    width: 60px;
+    text-align: center;
+}
+
+td.col_text {/* Nom et Prénom : alignés à gauche */
+    text-align: left;
+}
+
+.col_chkbox {/* Select (case à cocher) */
+    width: 70px;
+    text-align: center;
+}
+
+/* Léger surlignage de la ligne survolée */
+.row:hover {
+    background-color: #f3f9fd;
+}
+
+/*  Etape 4 : espace "Résumé" sous le tableau  */
+#container_summary {
+    display: flex;/* p1 | p2 | p3 sur une seule ligne */
+    justify-content: space-between;/* p1 à gauche, p3 à droite */
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0 8px;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+}
+
+#container_summary p {
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+/*  Etape 5 : formulaire de saisie  */
+#form_container {
+    display: flex;/* champs alignés sur une même ligne */
+    flex-wrap: wrap;/* retour à la ligne sur petits écrans */
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form_label {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.form_field {
+    width: 100px;
+    padding: 4px 6px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+/* Etape 6 : mise en forme des boutons */
+.btn-add,
+.btn-del,
+.btn-consol {
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-add    { background-color: #17b117; }   /* vert   : Ajouter */
+.btn-del    { background-color: #f00000; }   /* rouge  : Supprimer */
+.btn-consol { background-color: #b8860b; }   /* doré   : Console Tableau */
+
+/* Conteneur des boutons du bas : alignés à droite */
+#container_btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+/* Fonctionnalités supplémentaires (étape 6) */
+
+/* Bonus 1 : case "Tout sélectionner", poussée à gauche des boutons */
+#select_all_label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: auto;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Bonus 2 : champ de recherche, poussé à droite du formulaire */
+#search_group {
+    margin-left: auto;
+}
